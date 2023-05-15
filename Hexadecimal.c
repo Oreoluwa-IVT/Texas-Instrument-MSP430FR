@@ -4,7 +4,7 @@ main()
 {
     WDTCTL = DEVELOPMENT; // Disable watchdog timer for development
     long count = 0; // Create variable named count and set equal to 0
-    while(count<20) // Keep going until count is 20
+    while(count<0xFFFF) // Keep going until count is really big
     {
         count = count + 1; // Add 1 to variable count
     }
