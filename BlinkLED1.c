@@ -10,14 +10,17 @@ main() // All C programs have a main function
     WDTCTL = DEVELOPMENT; // Disables some security features
     PM5CTL0 = ENABLE_RED; // PM5CTL0 is a register in the MSP430FR6989 microcontroller that controls the power mode and the pin functionality
     P1DIR = HIGH; // Make a pin an output
+    P4DIR = HIGH;
     long x = 0; // Will be used to slow down blinking
     while(1) // Continuously repeat everything below
     {
         for(x=0 ; x < 30000 ; x=x+1); // Count from 0 to 30,000 for a delay
         P1OUT = HIGH; // Turn red LED light on  //P1OUT is a register that controls the state of the pin.
+        P4OUT = HIGH; 
         for(x=0 ; x < 30000 ; x=x+1); 
         // Count from 0 to 30,000 for a delay
         P1OUT = LOW; // Turn off the red LED light 
+        P4OUT = LOW;
         //P1OUT is a register that controls the state of the pin.
                
     }
