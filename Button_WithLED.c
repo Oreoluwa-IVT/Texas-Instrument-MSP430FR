@@ -5,15 +5,15 @@
 main() // All C programs have a main function
 {
     WDTCTL = DEVELOPMENT; // Disables some security features
-    PM5CTL0 = ENABLE_RED; // Enables the pins to the outside world
-    P9DIR = BIT6; // P9.6 will be connected to yellow LED
+    PM5CTL0 = ENABLE_RED; // Enables the pins
+    P9DIR = BIT6; // P9.6 this line will automatically make pin P9.6 an output pin
     long x = 0; // Will be used to slow down blinking
     while(1) // Continuously repeat everything below
     {
         for(x=0 ; x < 30000 ; x=x+1); // Count from 0 to 30,000 for a delay
-        P9OUT = BIT6; // Turn on new yellow LED
+        P9OUT = BIT6; // This makes the pin P9.6 go high
         for(x=0 ; x < 30000 ; x=x+1); // Count from 0 to 30,000 for a delay
-        P9OUT = 0x00; // Turn off new yellow LED
+        P9OUT = 0x00; // This makes the pin P9.6 go low
     }
 }
 //Explanation
