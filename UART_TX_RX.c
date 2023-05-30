@@ -7,7 +7,7 @@
 void select_clock_signals(void); // Assigns microcontroller clock signals
 void assign_pins_to_uart(void); // P4.2 is for TXD, P4.3 is for RXD
 void use_9600_baud(void); // UART operates at 9600 bits/second
-main()
+void main()
 {
     WDTCTL = WDTPW | WDTHOLD; // Stop WDT
     PM5CTL0 = ENABLE_PINS; // Enable pins
