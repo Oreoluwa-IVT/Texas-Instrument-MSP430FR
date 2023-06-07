@@ -2,6 +2,10 @@
 #include "uart.h"
 #define ENABLE_PINS 0xFFFE // Enables inputs and outputs
 void ADC_SETUP(void); // Used to setup ADC12 peripheral
+long map(long value, long fromLow, long fromHigh, long toLow, long toHigh) {
+    return (value - fromLow) * (toHigh - toLow) / (fromHigh - fromLow) + toLow;
+}
+
 main()
 {
     WDTCTL = WDTPW | WDTHOLD; // Stop WDT
@@ -18,7 +22,10 @@ main()
         // 1000 0000 0000B = 0x8000
         int a=4, b = ADC12MEM0 ;
         transmitMessage("Pressure: ");
-        transmitMessage("%d\r\n",b);
+      //  transmitMessage("%d\r\n",b);
+        int output = map(b, 0,4096, 0,3000);
+        transmitMessage("%d\r\n",output);
+        __delay_cycles(100000);
        // transmitMessage("%d\n",a);
         if (ADC12MEM0 > 0x001) // If input > 1.65V
         {
