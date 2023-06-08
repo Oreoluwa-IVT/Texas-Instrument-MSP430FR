@@ -1,3 +1,5 @@
+//The code needs the uart.h library for serial communication to work. 7
+//there's a folder calle "User defined" in the respository. Make sure you add that as part of the project and link in the code composer studio. 
 #include <msp430.h>
 #include "uart.h"
 #define ENABLE_PINS 0xFFFE // Enables inputs and outputs
