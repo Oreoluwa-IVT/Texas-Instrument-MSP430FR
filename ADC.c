@@ -1,4 +1,5 @@
 //The code needs the uart.h library for serial communication to work. 7
+// Version 1.0.0 (Stable)
 //there's a folder calle "User defined" in the respository. Make sure you add that as part of the project and link in the code composer studio. 
 #include <msp430.h>
 #include "uart.h"
