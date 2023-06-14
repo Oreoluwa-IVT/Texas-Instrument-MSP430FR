@@ -29,6 +29,7 @@ The MSP430FR family is a series of ultra-low-power microcontrollers designed by 
 - [Hexadecimal.c](Hexadecimal.c)
 - [ISR_forTwoTimers.c](ISR_forTwoTimers.c)
 - [ISRviadigitalinput.c](ISRviadigitalinput.c)
+- [LCD_Hello.c](LCD_Hello.c)
 - [MSP430_ISR.c](MSP430_ISR.c)
 - [MSP_BLINKLED.c](MSP_BLINKLED.c)
 - [Pointers.c](Pointers.c)
