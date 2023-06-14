@@ -61,3 +61,4 @@ void ADC_SETUP(void)
     ADC12MCTL0 = ADC12_P92; // P9.2 is analog input
 //Timer is incremental
 }
+//
