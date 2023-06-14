@@ -22,4 +22,14 @@ main()
 
 
 
-//LcdTest folder is needed for this code to run. See repository for details.
+//LCD_Files folder is needed for this code to run. See repository for details.
+// Use the following steps to add it to you code using CCS (Code Composer Studio)
+// 1. Right click on the project name in the Project Explorer window
+// 2. Select "Show Build Settings"
+// 3. Select "Include Options"
+// 4. Select "Add Directory Path Icon"  
+// 5. Browse to the folder and select it
+// 6. Click "OK"
+// 7. Click "OK" again/Apply and Close
+// Build the project and it should work.
+
