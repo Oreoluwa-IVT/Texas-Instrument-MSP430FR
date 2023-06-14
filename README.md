@@ -45,7 +45,7 @@ The MSP430FR family is a series of ultra-low-power microcontrollers designed by 
 
 
 
-   - Program 3 also requires the following header files: [Header File 1](/headers/header1.h), [Header File 2](/headers/header2.h)
+   - ADC.c also requires the following header files: [Userdefined](/headers/header1.h), [Header File 2](/headers/header2.h)
 
 Please refer to the individual program directories for more details on each program.
 
